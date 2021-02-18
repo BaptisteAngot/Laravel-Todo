@@ -13,5 +13,5 @@ Route::group([
 
     $router->get('/', 'HomeController@index')->name('home');
     $router->resource('todos', TodoController::class);
-
+    $router->resource('users', UserController::class);
 });
